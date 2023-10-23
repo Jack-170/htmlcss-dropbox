@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2{
+    padding: 10px;
+}
+
+/* stili header */
+
+header{
+    height: 70px;
+    /* debug rules */
+    border: 1px solid black;
+    background-color: red;
+}
+
+.topbar{
+    display: flex;
+    margin: 20px 0;
+    height: 30px;
+    /* debug rules */
+    border: 1px solid black;
+    background-color:pink;
+}
+
+.nav-options{
+    width: 25%;
+    height: 30px;
+    /* debug rules */
+    border: 1px solid black;
+    background-color:blue;
+}
+.gutter{
+    width: 50%;
+    height: 30px;
+    /* debug rules */
+    border: 1px solid black;
+    background-color:white;
+}
+
+/* stili main */
+
+/* sezione1 */
+.bg-blue{
+    background-color:rgb(41, 146, 192);
+    height: 400px;
+    
+}
+/* sezione2-6 */
+.common-section{
+    width: 65%;
+    height: 100px;
+    margin: 40px auto;
+    /* debug rules */
+    border: 1px solid black;
+    background-color:rgb(255, 255, 255);
+}
+/* sezione 3 */
+.col{
+    width:calc((100% / 3) - 15px );
+    margin-right: 20px;
+    height: 600px;
+    /* debug rules */
+    border: 1px solid black;
+    background-color:rgb(16, 233, 23);
+    margin-bottom: 25px;
+}
+
+/* per ora non funziona potrebbe essere per il wrap ma senza non riesco a mandare a capo la raw */
+.col:nth-child(3){
+    margin-right:0;
+}
+
+.buisness-plan{
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    height: 900px;
+    margin: 0 auto;
+    /* debug rules */
+    border: 1px solid black;
+    background-color:rgb(255, 255, 255);
+}
+
+.raw{
+    width: 100%;
+    height: 250px ;
+    margin-top: 25px;
+    /* debug rules */
+    border: 1px solid black;
+    background-color:rgb(255, 251, 14)
+}
+
+/* sezione4 */
+.partner{
+    width: 65%;
+    height: 350px;
+    margin: 60px auto;
+    /* debug rules */
+    border: 1px solid black;
+    background-color:rgb(255, 255, 255)
+}
+/* sezione 5 */
+.dropbox-buisness{
+    width: 65%;
+    height: 800px;
+    margin: 60px auto;
+    /* debug rules */
+    border: 1px solid black;
+    background-color:rgb(255, 255, 255)
+} 
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 750px;
+    /* debug rules */
+    border: 1px solid black;
+    background-color:rgb(255, 0, 0)
+} 
+
+.card{
+    width:calc(100% / 3);
+    height: 350px;
+    /* debug rules */
+    border: 1px solid black;
+    background-color: brown;
+}
+
+/* sezione7 */
+.desing{
+    display: flex;
+    width: 100%;
+    height: 350px;
+    /* debug rules */
+    border: 1px solid black;
+}
+
+.desing-card{
+    width:calc(100% / 3);
+    height: 350px;
+    /* debug rules */
+    border: 1px solid black;
+}
+
+.box{
+    width: 65%;
+    height:230px ;
+    margin: 10px auto;
+    /* debug rules */
+    border: 1px solid black
+}
+.desing-container{
+    height: 600px;
+}

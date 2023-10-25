@@ -5,8 +5,13 @@
 }
 
 h1,h2{
-    padding: 10px;
+    padding: 20px;
 }
+
+h3{
+    margin-bottom: 20px;
+}
+
 
 /* stili header */
 
@@ -21,6 +26,7 @@ header{
     display: flex;
     margin: 20px auto;
     height: 30px;
+    width: 100%;
     /* debug rules */
     /* border: 1px solid black; */
     /* background-color:pink; */
@@ -67,18 +73,58 @@ span{
 /* stili main */
 
 /* sezione1 */
-.bg-blue{
-    background-color:rgb(41, 146, 192);
-    height: 400px;
+.bg-lightblue{
+    background-color:rgb(150, 208, 232);
+    height: 700px;
+    width: 100%;
+    border: 1px solid black;
 }
+
+.jumbo{
+   display: flex;
+   flex-wrap: wrap;
+   width: 75%;
+   height:600px ;
+   margin: 100px auto 0 ;
+   /* debug rules */
+   /* border: 1px solid black;
+   background-color:rgb(255, 255, 255); */
+}
+
+.top-jumbo{
+    font-size: 40px;
+    width: 100%;
+    height: 30%;
+    /* debug rules */
+    /* border: 1px solid black; */
+}
+
+.fa-solid.fa-arrow-down{
+    font-size: 50px;
+    margin-top: 35px;
+}
+
+.buttom-jumbo{
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    height:70%;
+    /* debug rules */
+    /* border: 1px solid black; */
+}
+.img-jumbo{
+    width: 120%;
+    height: 120%;
+}
+
 /* sezione2-6 */
 .common-section{
     font-size: 20px;
     width: 65%;
-    height: 100px;
-    margin: 40px auto;
+    height: 150px;
+    margin: 60px auto;
     /* debug rules */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color:rgb(255, 255, 255);
 }
 /* sezione 3 */
@@ -127,7 +173,7 @@ ul{
 }
 
 li{
-    margin-top: 10px;
+    margin-top: 15px;
     display: flex;
     
 }
@@ -135,18 +181,18 @@ li{
     margin-right: 5px;
 }
 
-li:nth-child(3){
-    margin-bottom:40px ;
+.grey{
     color: grey;
+    margin-bottom: 40px;
 }
 
 /* per ora non funziona potrebbe essere per il wrap ma senza non riesco a mandare a capo la raw */
 .col:nth-child(3){
     margin-right:0;
 }
-hr{
+li>hr{
     width: 25%;
-    margin: 40px 0;
+    margin: 30px 0;
     color: grey;
 }
 
@@ -183,7 +229,6 @@ li h3{
     margin:30px 0;
 }
 
-
 /* sezione4 */
 .partner-block{
     display: flex;
@@ -207,20 +252,17 @@ li h3{
     /* border: 1px solid black; */
 }
 .box-text{
+    padding: 20px;
     width: 40%;
     height: 100%;
     /* debug rules */
     /* border: 1px solid black; */
 }
 
-.white-button-container{
-    display: flex;
-}
-
 .white{
     background-color: white;
     color: grey;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 
@@ -238,95 +280,193 @@ li h3{
 /* sezione 5 */
 .dropbox-buisness{
     width: 65%;
-    height: 800px;
+    height: 1100px;
     margin: 60px auto;
     /* debug rules */
-    border: 1px solid black;
-    background-color:rgb(255, 255, 255)
+    /* border: 1px solid black;
+    background-color:rgb(255, 255, 255) */
 } 
 .card-container{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 750px;
+    height: 1050px;
     /* debug rules */
-    border: 1px solid black;
-    background-color:rgb(255, 0, 0)
+    /* border: 1px solid black;
+    background-color:rgb(255, 0, 0) */
 } 
 
+
+
 .card{
-    width:calc(100% / 3);
-    height: 350px;
+    width:calc((100% / 3) - 20px);
+    font-size: 20px;
+    margin-right: 20px;
+    height: 500px;
     /* debug rules */
-    border: 1px solid black;
-    background-color: brown;
+    /* border: 1px solid black;
+    background-color: brown; */
+}
+
+.card-img{
+    width: 100%;
+    height: 50%;
 }
 
 /* sezione7 */
-.desing{
+.customer-container{
+    height: 800px;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.desing-container{
     display: flex;
     width: 100%;
-    height: 350px;
+    height: 550px;
     /* debug rules */
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+.desing-img{
+    width: 100%;
+    height: 100%;
+    filter: invert(100%);
 }
 
 .desing-card{
-    width:calc(100% / 3);
-    height: 350px;
+    width:50%;
+    height: 50%;
     /* debug rules */
-    border: 1px solid black;
+     /* border: 1px solid black; */
 }
 
-.box{
-    width: 65%;
-    height:230px ;
-    margin: 10px auto;
+.desing-box{
+    display: flex;
+    flex-wrap: wrap;
+    width:calc(100% / 3);
+    height: 550px;
     /* debug rules */
-    border: 1px solid black
+    background-color: #fff;
+    /* border: 1px solid black; */
 }
-.desing-container{
-    height: 600px;
+
+.box-img-desing{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    height:115px;
+    margin: 80px auto;
+    /* debug rules */
+    /* border: 1px solid black; */
+}
+
+.bg-green{
+    background-color: rgb(67, 235, 128);
+}
+
+.bg-bordeaux{
+    background-color: rgb(154, 1, 1);
+}
+
+.bg-red{
+    background-color: rgb(245, 56, 56);
+}
+.bg-blue{
+    background-color: rgb(37, 148, 203);
+}
+.bg-darkblue{
+    background-color: rgb(0, 17, 99);
+}
+.bg-yellow{
+    background-color: rgb(255, 222, 7);
+}
+
+#box-text-desing{
+    height: 70%;
+    width: 90%;
+    margin: 10px auto auto;
+    font-size: 18px;
+    /* debug rules */
+    /* border: 1px solid black; */
+}
+
+.box-logo{
+    width: 50%;
+    height: 25%;
+}
+.logo{
+    width: 90%;
+    height: 90%;
+}
+#bordeaux{
+    color: rgb(154, 1, 1);;
+}
+.desing-bar{
+    display: flex;
+    font-size: 20px;
+    width: 65%;
+    height: 150px;
+    margin: 50px auto;
+    /* debug rules */
+    /* border: 1px solid black; */
+    /* background-color:rgb(255, 255, 255); */
+}
+.buttom-container-desing{
+    display: flex;
+    width: 60%;
+    height: 100%;
+    /* debug rules */
+    /* border: 1px solid black */
+}
+
+
+/* sezione 8 */
+
+.questions-container{
+    width: 65%;
+    font-size: 20px;
+    height: 400px;
+    margin: 60px auto;
+    /* debug rules */
+    /* border: 1px solid black;
+    background-color:rgb(255, 255, 255) */
+}
+hr{
+    margin: 30px 0;
+}
+.questions{
+    padding: 20px;
 }
 
 /* stili footer */
 
 footer{
-    height: 350px;
     width: 100%;
+    height: 600px;
     /* debug rules */
-    background-color: rgb(0, 0, 0);
-}
-
-.buttom-bar{
+    background-color: black;
     display: flex;
-    margin: 20px auto;
-    height: 250px;
-    width: 75%;
-    /* debug rules */
-    border: 1px solid black;
-    background-color: brown;
-}
-.buttom-col{
-    width: 250px;
-    margin-right: 10px;
-    height: 250px;
-    /* debug rules */
-    border: 1px solid black;
-    background-color: rgb(0, 251, 255);
 }
 
-.buttom-col:last-child{
-    margin-right: 0;
-}
-
-.last-box{
+.last-container{
     display: flex;
-    justify-content: space-around;
-    margin: 20px auto;
-    height: 60px;
     width: 75%;
+    height: 70%;
+    margin: 120px auto 20px;
     /* debug rules */
-    border: 1px solid black;
-    background-color: brown;
+    /* border: 1px solid white ; */
 }
+.button-col{
+    height:100%;
+    width: calc(100% / 5);
+    color: white;
+    font-size: 20px;
+    /* debug rules */
+    /* border: 1px solid white ; */
+}
+
+.fa-solid.fa-caret-up{
+   font-size: 15px;
+}
+

@@ -24,7 +24,7 @@ header{
 
 .topbar{
     display: flex;
-    margin: 20px auto;
+    margin: 30px auto;
     height: 30px;
     width: 100%;
     /* debug rules */
@@ -74,10 +74,11 @@ span{
 
 /* sezione1 */
 .bg-lightblue{
+    display: flex;
     background-color:rgb(150, 208, 232);
     height: 700px;
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .jumbo{
@@ -262,7 +263,7 @@ li h3{
 .white{
     background-color: white;
     color: grey;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 
@@ -317,6 +318,7 @@ li h3{
 .customer-container{
     height: 800px;
     width: 100%;
+    background-color:rgb(150, 208, 232) ;
     /* border: 1px solid black; */
 }
 
